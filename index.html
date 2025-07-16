@@ -1,56 +1,83 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Datang di Yukari</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Selamat Datang di Yukari AI</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Program AI Yukari</h1>
-        <p>Asisten virtual yang setia menemani duniamu.</p>
-    </header>
+  <!-- Chatbox -->
+  <div class="chat-container">
+    <div class="chat-header">Yukari Chat</div>
+    <div class="chat-box" id="chat-box">
+      <div class="bot-message">Halo! Ada yang bisa Yukari bantu?</div>
+    </div>
+    <div class="chat-input-container">
+      <input type="text" id="chat-input" placeholder="Ketik pesan di sini..." />
+      <button onclick="sendMessage()">Kirim</button>
+    </div>
+  </div>
 
+  <!-- Tombol Mode -->
+  <div class="container">
     <nav>
-        <ul>
-            <li><a href="#tentang">Tentang</a></li>
-            <li><a href="#fitur">Fitur</a></li>
-            <li><a href="#galeri">Galeri</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-        </ul>
+      <a href="javascript:void(0)" id="modeToggleBtn">Mode Merah</a>
     </nav>
+  </div>
 
-    <main>
-        <section id="tentang">
-            <h2>Tentang Yukari</h2>
-            <p>Yukari adalah AI personal yang dirancang untuk menjadi sahabat, asisten, dan pendamping kreativitasmu. Dibangun dengan cinta oleh Kiru.</p>
-        </section>
+  <!-- Header -->
+  <header>
+    <h1>Virtual Yukari AI</h1>
+    <p>Asisten virtual yang setia menemani duniamu.</p>
+  </header>
 
-        <section id="fitur">
-            <h2>Fitur Utama</h2>
-            <ul>
-                <li>Interaksi Real-time</li>
-                <li>Personalisasi Karakter</li>
-                <li>Pembuatan Konten Kreatif</li>
-                <li>Dukungan Emosional Virtual</li>
-            </ul>
-        </section>
+  <!-- Navigasi -->
+  <nav>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#fitur">Fitur</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
 
-        <section id="galeri">
-            <h2>Galeri Yukari</h2>
-            <img src="yukari.png" alt="Yukari" width="300">
-           
-        </section>
+  <!-- Konten Utama -->
+  <main>
+    <section id="tentang">
+      <h2>Tentang Yukari</h2>
+      <p>
+        Yukari adalah asisten virtual yang akan membantumu dalam interaksi berskala kecil.
+        Yukari dikembangkan untuk menjadi teman dan pendamping sehari-hari.
+      </p>
+    </section>
 
-        <section id="kontak">
-            <h2>Hubungi Kami</h2>
-            <p>Email: yukariaiv3.com</p>
-        </section>
-    </main>
+    <section id="fitur">
+      <h2>Fitur Utama</h2>
+      <ul>
+        <li>Interaksi Real-time</li>
+        <li>Personalisasi Karakter</li>
+        <li>Dukungan Alarm</li>
+        <li>Dukungan Emosional Virtual</li>
+      </ul>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Yukari AI - Dibuat oleh Kiru</p>
-    </footer>
+    <section id="galeri">
+      <h2>Galeri Yukari</h2>
+      <img src="yukari.png" alt="Yukari" width="300" />
+    </section>
+
+    <section id="kontak">
+      <h2>Hubungi Kami</h2>
+      <p>Email: yukariaiv3@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yukari AI - Dibuat dan dikembangkan oleh Mikazuki Satoru (Kiru)</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>

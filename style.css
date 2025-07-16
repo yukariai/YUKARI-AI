@@ -1,10 +1,11 @@
-/* style.css */
+/* Warna default: BIRU */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to right, #0f2027, #203a43, #1c2680);
   color: #ffffff;
+  transition: background 0.5s ease, color 0.5s ease;
 }
 
 header {
@@ -48,4 +49,218 @@ footer {
   width: 100%;
   font-size: 0.9rem;
   color: #ccc;
+}
+
+/* Navigasi */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background-color: #3756b5;
+}
+
+/* Container tombol mode */
+.container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 16px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.container nav a {
+  background-color: #4e73df;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.container nav a:hover {
+  background-color: #3756b5;
+}
+
+/* MODE MERAH */
+body.red-mode {
+  background: linear-gradient(to right, #4b0000, #750000, #a30000);
+  color: #fff0f0;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.red-mode header {
+  background-color: rgba(80, 0, 0, 0.8);
+}
+
+body.red-mode header h1 {
+  color: #ff4d4d;
+}
+
+body.red-mode main h2 {
+  color: #ff4d4d;
+  border-color: #ff4d4d;
+}
+
+body.red-mode main p {
+  color: #ffdada;
+}
+
+body.red-mode footer {
+  background-color: rgba(40, 0, 0, 0.8);
+  color: #ffdada;
+}
+
+body.red-mode nav a {
+  color: #fff0f0;
+}
+
+body.red-mode nav a:hover {
+  background-color: #a30000;
+}
+
+body.red-mode .container nav a {
+  background-color: #ff4d4d;
+}
+
+body.red-mode .container nav a:hover {
+  background-color: #cc3b3b;
+}
+
+/* Chatbox styling */
+.chat-container {
+  width: 300px;
+  height: 400px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00bfff;
+  background: #111b2d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  z-index: 999;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.red-mode .chat-container {
+  background-color: #330000;
+  box-shadow: 0 0 10px #ff4d4d;
+}
+
+.chat-header {
+  background-color: #005fa3;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  transition: background-color 0.5s ease;
+}
+
+body.red-mode .chat-header {
+  background-color: #660000;
+}
+
+.chat-box {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #1a253a;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.red-mode .chat-box {
+  background-color: #4d0000;
+  color: #fff0f0;
+}
+
+.chat-input-container {
+  display: flex;
+  border-top: 1px solid #00bfff;
+  transition: border-color 0.5s ease;
+}
+
+body.red-mode .chat-input-container {
+  border-top: 1px solid #ff4d4d;
+}
+
+#chat-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 0 0 0 10px;
+  outline: none;
+  font-size: 1rem;
+  color: #000;
+}
+
+body.red-mode #chat-input {
+  color: #fff0f0;
+  background-color: #660000;
+}
+
+.chat-input-container button {
+  background: #00bfff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0 0 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+body.red-mode .chat-input-container button {
+  background: #ff4d4d;
+}
+
+.bot-message,
+.user-message {
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 80%;
+}
+
+.bot-message {
+  background-color: #003f5c;
+  align-self: flex-start;
+  transition: background-color 0.5s ease;
+}
+
+body.red-mode .bot-message {
+  background-color: #660000;
+}
+
+.user-message {
+  background-color: #00bfff;
+  align-self: flex-end;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+body.red-mode .user-message {
+  background-color: #ff4d4d;
 }
